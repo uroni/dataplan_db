@@ -17,3 +17,5 @@ Submit a pull request with the modified or added entries, please. You will find 
 ## License
 
 This work is licensed as CC0 1.0 ( https://creativecommons.org/publicdomain/zero/1.0/ ).
+
+[![Build Status](https://travis-ci.org/uroni/dataplan_db.svg?branch=master)](https://travis-ci.org/uroni/dataplan_db)
