@@ -18,6 +18,15 @@ def parse_and_write_to(input_fn, output, unlimited):
 				elif unlimited and len(toks)!=1:
 					raise DatabaseDbParseError("Expected one token on line "
 							+ str(input_line)+" in file "+input_fn+" got "+str(len(toks)))
+				if not unlimited and not toks[1].isdigit():
+					raise DatabaseDbParseError("Expected digits after "+toks[0]
+							+" on line "+str(input_line)
+							+" in file "+input_fn+" got \""+toks[1]+"\"")
+				try:
+					toks[0].encode("ascii")
+				except Exception as e:
+					raise DatabaseDbParseError("Expected ASCII characters on line "
+						+str(input_line)+" in file "+input_fn) from e				
 				
 				if unlimited:
 					output.write(toks[0]+" -1\n")
