@@ -1,0 +1,4 @@
+language: python
+python:
+  - "3.5"
+script: tools/generate.py dataplan_db.txt db_limited db_unlimited
