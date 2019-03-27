@@ -1,2 +1,3 @@
 *.dyn.telefonica.de
 *.kabel-badenwuerttemberg.de
+*.cablesurf.de
