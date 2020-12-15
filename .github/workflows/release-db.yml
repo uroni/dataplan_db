@@ -16,7 +16,7 @@ jobs:
           python3 tools/generate.py dataplan_db.txt db_limited db_unlimited
       - name: Get current date
         id: date
-        run: echo "name=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+        run: echo "name=$(date +'%Y-%m-%d_%H-%M-%S')" >> $GITHUB_ENV
       - name: Create Release
         id: create_release
         uses: actions/create-release@v1
