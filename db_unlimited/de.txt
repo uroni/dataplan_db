@@ -1,3 +1,6 @@
 *.pool.telefonica.de
 *.kabel-badenwuerttemberg.de
 *.cablesurf.de
+*.kabel-deutschland.de
+*.t-ipconnect.de
+*.inexio.net
